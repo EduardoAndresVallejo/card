@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-Linear-gradient(active input border): hsl(249, 99%, 64%) to
+          hsl(278, 94%, 30%);
+        --color-Red(input errors): hsl(0, 100%, 66%);
+        --color-White: hsl(0, 0%, 100%);
+        --color-Light-grayish-violet: hsl(270, 3%, 87%);
+        --color-Dark-grayish-violet: hsl(279, 6%, 55%);
+        --color-Very-dark-violet: hsl(278, 68%, 11%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <div class="header flex flex-col">
+        <div class="fondo-bg h-2">
+          <img src="./images/bg-main-mobile.png" class=" w-full" />
+        </div>
+        <div class="card-back p-8">
+          <img src=".//images/bg-card-back.png" class="ml-12 w-70 static" />
+          <span class="text-White z-10 text-sm/6 absolute left-75 top-26"
+            >000</span>
+          <div class="front-card">
+            <img
+              src=".//images/bg-card-front.png"
+              class="w-70 absolute top-32 left-6"
+            />
+            <img
+              src=".//images/card-logo.svg"
+              class="absolute w-14 top-36 left-10"
+            />
+          </div>
+          <div class="info absolute flex flex-col text-sm/8 m-4 w-60 text-White" id="info-card">
+            <div class="info-id text-xl">
+              <p class="text-center w-full" id="number-Card">0000 0000 0000 0000</p>
+            </div>
+            <div class="info-bottom flex justify-between px-2">
+              <p>Jane Appleseed</p>
+              <p>00/00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-cliente mt-22 px-6 w-full flex flex-col" id="formulario">
+        <div class="info-name flex flex-col ">
+          <label for="">Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" class="border w-80 p-2 border rounded-lg" id="name">
+        </div>
+        <div class="info-card-number my-6">
+          <label for="">Card Number</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="solonumero border w-80 p-2 border rounded-lg" id="number-card">
+        </div>
+          <div class="datefecha flex ">
+            <label for="">Exp. Date (MM/YY)</label>
+            <label for="" class="mx-6">CVC</label>
+          </div>
+          <div class="info-data-fecha w-70 flex">
+            <input type="text" placeholder="MM" class="solonumero border w-14 border rounded-lg text-center mr-2" id="mes">
+            <input type="text" placeholder="YY" class="solonumero border w-14 mx-1 border rounded-lg text-center" id="years">
+            <input type="text" placeholder="e.g. 123" class="solonumero border 
+             py-2 px-2  border rounded-lg ml-6 w-42" id="cvc">
+          </div>
+      </div>
+      <div class="btn bg-Very-dark-violet text-White text-center w-80 m-6 p-4 rounded-lg">
+        <button id="confirmar">Confirm</button>
+      </div>
+    </div>
+
+    <!-- 
+
+  
+  
+
+  
+
+   Completed state start -->
+
+    <!-- Thank you!
+  We've added your card details
+  Continue -->
+  <script src="app.js"></script>
+  </body>
+</html>
